@@ -73,10 +73,82 @@ main {
 }
 
 /* Formularios */
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
 .contenedor__login-register form {
     width: 100%;
     padding: 80px 20px;
     background: white;
     position: absolute;
     border-radius: 20px;
+}
+
+.contenedor__login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6000;
+}
+
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #ff6000;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.form__login {
+    opacity: 1;
+    display: block;
+}
+
+.form__register {
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+    }
+    .caja__trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div {
+        margin: 0px;
+        position: absolute;
+    }
+    /* Form*/
+    .contenedor__login-register {
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenedor__login-register form {
+        position: relative;
+    }    
 }
